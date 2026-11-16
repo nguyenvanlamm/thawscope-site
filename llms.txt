@@ -1,0 +1,17 @@
+# Thawscope
+
+> Thawscope (on the App Store as "Thawscope: Word Puzzle") is an offline word puzzle for iPhone. Each level freezes one English word at the centre of a round thermal scope; every word the player types lands on the scope as a probe, nearer the centre and hotter (0 to 100 degrees) the closer its meaning, and words related to each other land in the same direction. Coming soon to the App Store.
+
+- Rules: type any English word to place a probe. A word the game does not know, or one already tried, costs nothing; plurals and other forms count as their base word (apples is apple). Each level has 20 to 30 probes; run out and the core refreezes, and the retry brings a different hidden word.
+- Thaw stages, set by the best probe so far: Crack shows the letter count, Thin ice the first letter, Slush the last letter, Meltwater most of the word. The last hidden letter is always left for the player.
+- Campaign: 10 themed Core sets of 12 levels each (Music, Pantry, Weather, Feelings, Body, Sport, Ocean, City, Garden, Workshop), up to three stars per level for the probes left; a set opens after 8 levels of the one before.
+- Daily Core: one hidden word per calendar day, unlimited probes, a streak of days solved on the day; the last seven days can be replayed.
+- Tools: a Flare places a free probe about twice as close as the best one; a Pick shows the next letter; a Battery adds five probes. You start with 3 Flares, 2 Picks and 1 Battery and earn more by clearing levels 4, 8 and 12 of each set for the first time and by solving the Daily Core (up to 9 of each from rewards).
+- Free: all 120 levels and the Daily Core. Optional purchases: Flare Bundle (6 Flares), Supply Drop (10 Flares, 8 Picks, 6 Batteries), Field Journal (one-time; opens every past Daily Core). No subscription; Restore purchases is in Settings.
+- No ads, no account, no analytics or tracking. The word data ships inside the app (derived from GloVe vectors, PDDL 1.0, and WordNet 3.0), so it plays fully offline; only buying or restoring talks to the App Store. The game is in English.
+
+## Pages
+
+- [Home](https://nguyenvanlamm.github.io/thawscope-site/): what the game is, how it plays, the thaw stages, Core sets, Daily Core, tools and FAQ
+- [Support](https://nguyenvanlamm.github.io/thawscope-site/support.html): contact, how to play, purchases and restoring, progress
+- [Privacy Policy](https://nguyenvanlamm.github.io/thawscope-site/privacy.html): what the game stores on the device and what it never collects

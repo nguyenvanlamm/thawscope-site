@@ -1,0 +1,54 @@
+{
+ "url": "https://nguyenvanlamm.github.io/thawscope-site/",
+ "final_url": "https://nguyenvanlamm.github.io/thawscope-site/",
+ "captured_at": "2026-11-16T00:02:13Z",
+ "target_type": "live-url+repo",
+ "files": {
+  "page.html": {
+   "status": 200,
+   "url": "https://nguyenvanlamm.github.io/thawscope-site/"
+  },
+  "robots.txt": {
+   "status": 200,
+   "url": "https://nguyenvanlamm.github.io/robots.txt"
+  },
+  "sitemap.xml": {
+   "status": 404,
+   "reason": "not found",
+   "url": "https://nguyenvanlamm.github.io/sitemap.xml"
+  },
+  "llms.txt": {
+   "status": 200,
+   "url": "https://nguyenvanlamm.github.io/llms.txt"
+  },
+  "site-sitemap.xml": {
+   "status": 404,
+   "reason": "not found",
+   "url": "https://nguyenvanlamm.github.io/thawscope-site/sitemap.xml"
+  },
+  "site-llms.txt": {
+   "status": 404,
+   "reason": "not found",
+   "url": "https://nguyenvanlamm.github.io/thawscope-site/llms.txt"
+  },
+  "site-robots.txt": {
+   "status": 404,
+   "reason": "not found",
+   "url": "https://nguyenvanlamm.github.io/thawscope-site/robots.txt"
+  },
+  "head.json": {
+   "status": "derived"
+  }
+ },
+ "owners": {
+  "meta-tags": "seo-ai-optimizer",
+  "robots-sitemap": "seo-ai-optimizer",
+  "structured-data": "seo-ai-optimizer",
+  "llms-txt": "seo-ai-optimizer",
+  "crawler-access": "seo-ai-optimizer",
+  "markdown-pages": "website-agent-readiness",
+  "agent-readiness-scan": "website-agent-readiness",
+  "ai-actions": "not-covered: no web-branch member evaluates it; run /ux-ax-review or /design-optimizer",
+  "virality": "viral-product-evaluator"
+ }
+}
