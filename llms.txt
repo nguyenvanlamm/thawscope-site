@@ -1,6 +1,6 @@
 # Thawscope
 
-> Thawscope (on the App Store as "Thawscope: Word Puzzle") is an offline word puzzle for iPhone. Each level freezes one English word at the centre of a round thermal scope; every word the player types lands on the scope as a probe, nearer the centre and hotter (0 to 100 degrees) the closer its meaning, and words related to each other land in the same direction. Coming soon to the App Store.
+> Thawscope (to be listed on the App Store as "Thawscope: Word Puzzle") is an offline word puzzle for iPhone. Each level freezes one English word at the centre of a round thermal scope; every word the player types lands on the scope as a probe, nearer the centre and hotter (0 to 100 degrees) the closer its meaning, and words related to each other land in the same direction. Coming soon to the App Store.
 
 - Rules: type any English word to place a probe. A word the game does not know, or one already tried, costs nothing; plurals and other forms count as their base word (apples is apple). Each level has 20 to 30 probes; run out and the core refreezes, and the retry brings a different hidden word.
 - Thaw stages, set by the best probe so far: Crack shows the letter count, Thin ice the first letter, Slush the last letter, Meltwater most of the word. The last hidden letter is always left for the player.
