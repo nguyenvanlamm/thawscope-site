@@ -1,0 +1,29 @@
+{
+ "title": "Thawscope: a word puzzle that shows which way is warmer",
+ "meta": {
+  "viewport": "width=device-width, initial-scale=1",
+  "description": "Offline iPhone word puzzle: each guess lands on a thermal scope by meaning, and warm guesses thaw the frozen word. 120 free levels, a Daily Core, no ads.",
+  "robots": "index, follow, max-image-preview:large",
+  "theme-color": "#F3F5F7",
+  "color-scheme": "light",
+  "og:type": "website",
+  "og:site_name": "Thawscope",
+  "og:title": "Thawscope: every guess shows which way is warmer",
+  "og:description": "A frozen word sits at the centre of a thermal scope. Type a word, read how hot it lands and which way it points, and thaw the letters. Coming soon to the App Store.",
+  "og:url": "https://nguyenvanlamm.github.io/thawscope-site/",
+  "og:image": "https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg",
+  "og:image:width": "1200",
+  "og:image:height": "630",
+  "og:image:alt": "The Thawscope icon, a cracked ice core under a thermal arc, beside a level in play: probes such as sweet 70\u00b0 and sugar 84\u00b0 placed around a half-thawed word.",
+  "og:locale": "en_US",
+  "og:image:type": "image/jpeg",
+  "twitter:card": "summary_large_image",
+  "twitter:title": "Thawscope: every guess shows which way is warmer",
+  "twitter:description": "A frozen word sits at the centre of a thermal scope. Type a word, read how hot it lands, and thaw the letters. Coming soon to iPhone.",
+  "twitter:image": "https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg"
+ },
+ "canonical": "https://nguyenvanlamm.github.io/thawscope-site/",
+ "jsonld": [
+  "{\"@context\":\"https://schema.org\",\"@graph\":[\n{\"@type\":[\"VideoGame\",\"MobileApplication\"],\"@id\":\"https://nguyenvanlamm.github.io/thawscope-site/#game\",\"name\":\"Thawscope\",\"url\":\"https://nguyenvanlamm.github.io/thawscope-site/\",\"description\":\"An offline word puzzle for iPhone: guesses land on a thermal scope by closeness in meaning, and warm guesses thaw the frozen word's letters.\",\"genre\":[\"Word\",\"Puzzle\"],\"gamePlatform\":\"iPhone\",\"operatingSystem\":\"iOS\",\"applicationCategory\":\"GameApplication\",\"inLanguage\":\"en\",\"image\":\"https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg\",\"screenshot\":\"https://nguyenvanlamm.github.io/thawscope-site/assets/game.webp\",\"numberOfPlayers\":{\"@type\":\"QuantitativeValue\",\"value\":1},\"author\":{\"@type\":\"Person\",\"name\":\"Luong Nguyen\"},\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/PreOrder\"}},\n{\"@type\":\"WebSite\",\"@id\":\"https://nguyenvanlamm.github.io/thawscope-site/#site\",\"name\":\"Thawscope\",\"url\":\"https://nguyenvanlamm.github.io/thawscope-site/\",\"inLanguage\":\"en\"},\n{\"@type\":\"FAQPage\",\"mainEntity\":[\n{\"@type\":\"Question\",\"name\":\"Is Thawscope free?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes. All 120 levels and the Daily Core are free, with no ads. Optional purchases: the Flare Bundle (6 Flares), the Supply Drop (10 Flares, 8 Picks and 6 Batteries) and the Field Journal, which opens every past Daily Core beyond the last seven days.\"}},\n{\"@type\":\"Question\",\"name\":\"Do I need an internet connection?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No. The word data ships with the game, so it plays fully offline. Only purchases go through the App Store.\"}},\n{\"@type\":\"Question\",\"name\":\"Which words count?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"English dictionary words. Plurals and other forms count as their base word, so apples is read as apple. A word the game does not know, or one you already tried, costs no probe.\"}},\n{\"@type\":\"Question\",\"name\":\"Does the game collect any data?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No. There is no account, no analytics and no tracking. Your progress stays on your device.\"}},\n{\"@type\":\"Question\",\"name\":\"When can I play?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Thawscope is coming soon to iPhone on the App Store.\"}}]}]}"
+ ]
+}

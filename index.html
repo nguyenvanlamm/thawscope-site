@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thawscope: a word puzzle where every guess shows which way is warmer</title>
-<meta name="description" content="Thawscope is an offline word puzzle for iPhone. Type any word: the closer its meaning to the frozen word, the hotter it lands on a thermal scope, and warm guesses thaw the letters. 120 free levels, a Daily Core, no ads, no tracking.">
+<title>Thawscope: a word puzzle that shows which way is warmer</title>
+<meta name="description" content="Offline iPhone word puzzle: each guess lands on a thermal scope by meaning, and warm guesses thaw the frozen word. 120 free levels, a Daily Core, no ads.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="alternate" type="text/plain" href="llms.txt" title="Thawscope for AI assistants">
 <link rel="canonical" href="https://nguyenvanlamm.github.io/thawscope-site/">
 <meta name="theme-color" content="#F3F5F7">
 <meta name="color-scheme" content="light">
@@ -19,9 +21,22 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Thawscope icon, a cracked ice core under a thermal arc, beside a level in play: probes such as sweet 70° and sugar 84° placed around a half-thawed word.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thawscope: every guess shows which way is warmer">
+<meta name="twitter:description" content="A frozen word sits at the centre of a thermal scope. Type a word, read how hot it lands, and thaw the letters. Coming soon to iPhone.">
+<meta name="twitter:image" content="https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"VideoGame","name":"Thawscope","url":"https://nguyenvanlamm.github.io/thawscope-site/","description":"An offline word puzzle for iPhone: guesses land on a thermal scope by closeness in meaning, and warm guesses thaw the frozen word's letters.","genre":["Word","Puzzle"],"gamePlatform":"iPhone","operatingSystem":"iOS","applicationCategory":"Game","inLanguage":"en","image":"https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/PreOrder"}}
+{"@context":"https://schema.org","@graph":[
+{"@type":["VideoGame","MobileApplication"],"@id":"https://nguyenvanlamm.github.io/thawscope-site/#game","name":"Thawscope","url":"https://nguyenvanlamm.github.io/thawscope-site/","description":"An offline word puzzle for iPhone: guesses land on a thermal scope by closeness in meaning, and warm guesses thaw the frozen word's letters.","genre":["Word","Puzzle"],"gamePlatform":"iPhone","operatingSystem":"iOS","applicationCategory":"GameApplication","inLanguage":"en","image":"https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg","screenshot":"https://nguyenvanlamm.github.io/thawscope-site/assets/game.webp","numberOfPlayers":{"@type":"QuantitativeValue","value":1},"author":{"@type":"Person","name":"Luong Nguyen"}},
+{"@type":"WebSite","@id":"https://nguyenvanlamm.github.io/thawscope-site/#site","name":"Thawscope","url":"https://nguyenvanlamm.github.io/thawscope-site/","inLanguage":"en"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Thawscope free?","acceptedAnswer":{"@type":"Answer","text":"Yes. All 120 levels and the Daily Core are free, with no ads. Optional purchases: the Flare Bundle (6 Flares), the Supply Drop (10 Flares, 8 Picks and 6 Batteries) and the Field Journal, which opens every past Daily Core beyond the last seven days."}},
+{"@type":"Question","name":"Do I need an internet connection?","acceptedAnswer":{"@type":"Answer","text":"No. The word data ships with the game, so it plays fully offline. Only purchases go through the App Store."}},
+{"@type":"Question","name":"Which words count?","acceptedAnswer":{"@type":"Answer","text":"English dictionary words. Plurals and other forms count as their base word, so apples is read as apple. A word the game does not know, or one you already tried, costs no probe."}},
+{"@type":"Question","name":"Does the game collect any data?","acceptedAnswer":{"@type":"Answer","text":"No. There is no account, no analytics and no tracking. Your progress stays on your device."}},
+{"@type":"Question","name":"When can I play?","acceptedAnswer":{"@type":"Answer","text":"Thawscope is coming soon to iPhone on the App Store."}}]}]}
 </script>
 <style>
   :root {
@@ -61,6 +76,7 @@
     background: var(--white); color: var(--ink); text-decoration: none; font-weight: 600;
   }
   .btn2:hover { border-color: var(--ink3); }
+  .note { margin: 12px 0 0; font-size: 15px; color: var(--ink3); }
   .facts { list-style: none; padding: 0; margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; color: var(--ink3); font-size: 15px; }
   .facts li::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--orange); margin-right: 8px; vertical-align: 2px; }
   .phone {
@@ -98,7 +114,8 @@
     .steps, .features { grid-template-columns: 1fr; }
     .shots { grid-template-columns: 1fr 1fr; }
     .shots figure:last-child { display: none; }
-    header.top nav { display: none; }
+    header.top nav { gap: 14px; font-size: 14px; }
+    header.top nav a:first-child { display: none; }
   }
   @media (max-width: 420px) { .shots { grid-template-columns: 1fr; } .shots figure:last-child { display: block; } }
 </style>
@@ -107,7 +124,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
   <header class="top">
-    <img src="assets/icon-256.png" alt="" width="40" height="40">
+    <img src="assets/icon-80.png" srcset="assets/icon-80.png 2x, assets/icon-120.png 3x" alt="" width="40" height="40">
     <strong>Thawscope</strong>
     <nav aria-label="Page">
       <a href="#how">How it plays</a>
@@ -129,11 +146,13 @@
           <span class="soon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.8-1.1-2.9-4.2zM13.9 5.2c.7-.9 1.2-2 1-3.2-1 .1-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>Coming soon to the App Store</span>
           <a class="btn2" href="#how">See how it plays</a>
         </div>
+        <p class="note">Not out yet. This page will link to the App Store on launch day.</p>
         <ul class="facts">
           <li>120 free levels</li>
-          <li>A new Daily Core every day</li>
+          <li>A new daily word</li>
           <li>No ads, no account</li>
           <li>Works offline</li>
+          <li>Optional in-app purchases</li>
         </ul>
       </div>
       <div class="phone">
@@ -193,7 +212,7 @@
       </div>
       <div class="shots">
         <figure>
-          <img src="assets/home.webp" width="390" height="844" loading="lazy" alt="The Home screen: the scope, the Daily Core card with this week's strip, the Expeditions list and the field kit of Flares, Picks and Batteries.">
+          <img src="assets/home.webp" width="390" height="844" loading="lazy" alt="The Home screen: the scope, the Daily Core card with this week's strip, Expeditions (the Core sets) and the field kit of Flares, Picks and Batteries.">
           <figcaption>Home: today's Daily Core and your Core sets.</figcaption>
         </figure>
         <figure>
@@ -201,8 +220,8 @@
           <figcaption>In play: probes cluster where the meaning is warm.</figcaption>
         </figure>
         <figure>
-          <img src="assets/won.webp" width="390" height="844" loading="lazy" alt="A won level: the core has thawed and the result sheet shows the stars earned.">
-          <figcaption>Thawed: stars for the probes you had left.</figcaption>
+          <img src="assets/won.webp" width="390" height="844" loading="lazy" alt="A won level: the frozen word HONEY has thawed at the centre of the scope, with the best probe at 100 degrees.">
+          <figcaption>Thawed: the frozen word is free.</figcaption>
         </figure>
       </div>
     </div>
@@ -240,15 +259,16 @@
       <p class="sub" style="margin-left:auto;margin-right:auto">Level 1 opens straight onto the scope, with a sample probe to show you how to read it.</p>
       <div class="cta">
         <span class="soon">Coming soon to the App Store</span>
-        <a class="btn2" href="support.html">Get help or send feedback</a>
+        <a class="btn2" href="#how">See how it plays</a>
       </div>
+      <p class="note">Not out yet. This page will link to the App Store on launch day. Questions or feedback: <a href="support.html">support</a>.</p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Thawscope</span>
+    <span>© 2026 Luong Nguyen</span>
     <a href="privacy.html">Privacy Policy</a>
     <a href="support.html">Support</a>
     <span>Word data: GloVe (PDDL 1.0) and WordNet 3.0</span>

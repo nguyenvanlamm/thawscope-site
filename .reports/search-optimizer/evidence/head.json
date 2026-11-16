@@ -1,0 +1,23 @@
+{
+ "title": "Thawscope: a word puzzle where every guess shows which way is warmer",
+ "meta": {
+  "viewport": "width=device-width, initial-scale=1",
+  "description": "Thawscope is an offline word puzzle for iPhone. Type any word: the closer its meaning to the frozen word, the hotter it lands on a thermal scope, and warm guesses thaw the letters. 120 free levels, a Daily Core, no ads, no tracking.",
+  "theme-color": "#F3F5F7",
+  "color-scheme": "light",
+  "og:type": "website",
+  "og:site_name": "Thawscope",
+  "og:title": "Thawscope: every guess shows which way is warmer",
+  "og:description": "A frozen word sits at the centre of a thermal scope. Type a word, read how hot it lands and which way it points, and thaw the letters. Coming soon to the App Store.",
+  "og:url": "https://nguyenvanlamm.github.io/thawscope-site/",
+  "og:image": "https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg",
+  "og:image:width": "1200",
+  "og:image:height": "630",
+  "og:image:alt": "The Thawscope icon, a cracked ice core under a thermal arc, beside a level in play: probes such as sweet 70\u00b0 and sugar 84\u00b0 placed around a half-thawed word.",
+  "twitter:card": "summary_large_image"
+ },
+ "canonical": "https://nguyenvanlamm.github.io/thawscope-site/",
+ "jsonld": [
+  "{\"@context\":\"https://schema.org\",\"@type\":\"VideoGame\",\"name\":\"Thawscope\",\"url\":\"https://nguyenvanlamm.github.io/thawscope-site/\",\"description\":\"An offline word puzzle for iPhone: guesses land on a thermal scope by closeness in meaning, and warm guesses thaw the frozen word's letters.\",\"genre\":[\"Word\",\"Puzzle\"],\"gamePlatform\":\"iPhone\",\"operatingSystem\":\"iOS\",\"applicationCategory\":\"Game\",\"inLanguage\":\"en\",\"image\":\"https://nguyenvanlamm.github.io/thawscope-site/assets/share-card.jpg\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"availability\":\"https://schema.org/PreOrder\"}}"
+ ]
+}

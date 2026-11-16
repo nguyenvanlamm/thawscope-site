@@ -1,0 +1,104 @@
+{
+ "url": "https://nguyenvanlamm.github.io/thawscope-site/",
+ "final_url": "https://nguyenvanlamm.github.io/thawscope-site/",
+ "captured_at": "2026-11-16T00:05:42Z",
+ "target_type": "live-url+local-repo",
+ "local_repo": "/home/lam/Documents/projects/thawscope-site/.claude/worktrees/s9-site",
+ "local_entry_pages": [
+  "index.html",
+  "privacy.html",
+  "support.html",
+  "404.html",
+  "llms.txt",
+  "robots.txt",
+  "sitemap.xml"
+ ],
+ "notes": "Local copy is newer than live (adds sitemap.xml, llms.txt, robots.txt, 404.html, JSON-LD @graph with FAQPage, shorter title/description, twitter:* tags). Same look and copy. Code-level findings come from local files; rendered/visual findings from the live page. Root files were fetched at the origin (user root Pages site) per intake rule, and also under the site path in site-path/.",
+ "files": {
+  "page.html": {
+   "status": 200,
+   "source": "live"
+  },
+  "rendered-dom.html": {
+   "status": "derived",
+   "source": "google-chrome --headless=new --dump-dom (live)"
+  },
+  "head.json": {
+   "status": "derived",
+   "source": "live page.html"
+  },
+  "head.local.json": {
+   "status": "derived",
+   "source": "local index.html"
+  },
+  "screenshots": {
+   "status": "ok",
+   "tool": "google-chrome --headless=new (no /browse)",
+   "files": [
+    "mobile.png (390x2600)",
+    "desktop.png (1280x1400)",
+    "mobile-full.png (390x6000)",
+    "desktop-full.png (1280x4200)"
+   ],
+   "source": "live"
+  },
+  "robots.txt": {
+   "status": 200,
+   "source": "origin https://nguyenvanlamm.github.io/robots.txt (root Pages site, not this repo)"
+  },
+  "sitemap.xml": {
+   "status": 404,
+   "reason": "not found at origin"
+  },
+  "llms.txt": {
+   "status": 200,
+   "source": "origin https://nguyenvanlamm.github.io/llms.txt (root Pages site, not this repo)"
+  },
+  "site-path/robots.txt": {
+   "status": 404,
+   "reason": "not deployed yet; exists locally"
+  },
+  "site-path/sitemap.xml": {
+   "status": 404,
+   "reason": "not deployed yet; exists locally"
+  },
+  "site-path/llms.txt": {
+   "status": 404,
+   "reason": "not deployed yet; exists locally"
+  },
+  "site-path/privacy.html": {
+   "status": 200
+  },
+  "site-path/support.html": {
+   "status": 200
+  },
+  "site-path/404.html": {
+   "status": 404,
+   "reason": "not deployed yet; exists locally (GitHub default 404 body served)"
+  },
+  "agent-readiness/scan.json": {
+   "status": "reused",
+   "source": ".reports/search-optimizer/evidence/agent-readiness/scan.json",
+   "scannedAt": "2026-11-16T00:02:34.953Z",
+   "targetUrl": "https://nguyenvanlamm.github.io/thawscope-site/"
+  }
+ },
+ "owners": {
+  "clarity": "dont-make-me-think",
+  "brand": "ux-ax-review",
+  "responsive": "ux-ax-review",
+  "accessibility": "ux-ax-review",
+  "performance": "ux-ax-review",
+  "conversion": "ux-ax-review",
+  "robots-sitemap": "website-agent-readiness",
+  "markdown-pages": "website-agent-readiness",
+  "crawler-access": "website-agent-readiness",
+  "structured-data": "ux-ax-review",
+  "llms-txt": "ux-ax-review",
+  "ai-actions": "ux-ax-review",
+  "agent-readiness-scan": "website-agent-readiness",
+  "virality": "viral-product-evaluator",
+  "meta-tags": "viral-product-evaluator"
+ },
+ "ownership_case": "A \u2014 G1 approved by owner earlier today (search-optimizer run); scan.json reused, targetUrl matches, scannedAt 2026-11-16T00:02:34Z (<24h)"
+}
